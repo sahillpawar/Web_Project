@@ -1,0 +1,26 @@
+*{
+    margin: 23px; 
+    align-content: center;
+}
+
+.cart{
+   width: 580px;
+   height: 300px;
+   border-radius: 14px; 
+   border:2px solid white;
+   background-color: white;
+   text-align: center;   
+}
+
+#h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button{
+    background-color: #53c153;
+    padding: 10px;
+    border-radius: 6px;
+    color:white;
+    border: 2px solid white;
+    font-weight: bold;
+}
