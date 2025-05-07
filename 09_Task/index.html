@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid-Calculator</title>
+    <style>
+
+        *{
+            color: white;
+        }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: skyblue;
+      }
+      .calculator {
+        padding: 10px;
+        min-width: 300px;
+        height: 400px;
+        background-color: rgb(233, 179, 179);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        border-radius: 10px;
+        
+      }
+      .item1 {
+        background-color: rgb(98, 97, 97);
+        /* height: 50px;
+        width: 50px; */
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .hundred {
+        display: grid;
+        grid-column: 1/5;
+        background-color: rgb(4, 9, 146);
+        color: #fff;
+        justify-content: end;
+        align-items: center;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .pastel-1 {
+        background-color: orange;
+        color: #fff;
+        font-size: 2rem;
+      }
+      .pastel-red {
+        background-color: rgb(207, 23, 23);
+        color: #fff;
+      }
+      
+      .equal{
+         grid-column: 3/5;
+         background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="hundred">100</div>
+      <div class="item1 pastel-red">AC</div>
+      <div class="item1 pastel-red">Del</div>
+      <div class="item1 pastel-1">.</div>
+      <div class="item1 pastel-1">/</div>
+      <div class="item1">7</div>
+      <div class="item1">8</div>
+      <div class="item1">9</div>
+      <div class="item1 pastel-1">*</div>
+      <div class="item1">4</div>
+      <div class="item1">5</div>
+      <div class="item1">6</div>
+      <div class="item1 pastel-1">-</div>
+      <div class="item1">1</div>
+      <div class="item1">2</div>
+      <div class="item1">3</div>
+      <div class="item1 pastel-1">+</div>
+      <div class="item1">00</div>
+      <div class="item1">0</div>
+      <div class="item1 pastel-1 equal">=</div>
+      </div>
+    </div>
+  </body>
+</html>

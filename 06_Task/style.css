@@ -1,0 +1,87 @@
+*{
+    color: white;
+}
+body{
+    background-color: black ;
+    color: white;
+}
+
+h2{
+    color: white;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between; /* Equal spacing */
+    align-content: center;
+    list-style: none;
+    background-color: white;
+    height: 40px;
+}
+
+nav ul li {
+    margin: 6px;
+    align-content: center;
+    position: relative;
+}
+
+nav ul li a, nav ul li button {
+    text-decoration: none;
+    color: black;
+    height: 30px;
+
+    
+}
+
+nav ul li a {
+    font-size: 18px;
+}
+
+button{
+    font-size: 15px;
+    background-color: lightgrey;
+    border-radius: 4px;
+    border: none;
+    width: 80px;
+}
+
+nav ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Places the underline at the bottom of the li */
+    height: 3px;
+    background-color: blue;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+.uls{
+    width: 14%;
+    height: 190px;
+    display: block;
+    background-color: rgb(7, 117, 7);
+    padding: 9px;
+    margin: 7px;
+}
+
+.navbar p a{
+    text-decoration: none;
+    color: white;
+}
+
+.button{
+    width: 97%;
+    height: 36px;
+    background-color: rgba(13, 13, 13, 0.487);
+    font-weight: bold;
+    
+}

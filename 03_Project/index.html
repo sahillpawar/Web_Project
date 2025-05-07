@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Navbars</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d4e1ea;
+        }
+
+        .navbar {
+            width: 90%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 17px 0;
+            background-color: #111;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin-right: 20px;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .contact-btn {
+            background-color: #00bcd4;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            margin-right: 20px;
+        }
+
+        .nav-centered {
+            justify-content: space-between;
+            padding: 17px;
+        }
+
+        .nav-reverse {
+            flex-direction: row-reverse;
+        }
+
+        .nav-left-right {
+            justify-content: space-between;
+        }
+
+        .nav-left-right .nav-links {
+            margin-left: 20px;
+        }
+
+        .nav-left-right .logo {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <br> <br> <br>
+    <!-- Navbar 1: Logo on the left, items centered, Contact button on the right -->
+    <nav class="navbar">
+        <div class="logo">LOGOBAKERY</div>
+        <ul class="nav-links">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <a href="#" class="contact-btn">Contact</a>
+    </nav>
+    <br> <br>
+
+    <!-- Navbar 2: Links on the left, logo on the right -->
+    <nav class="navbar nav-centered">
+        <ul class="nav-links">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <a href="#" class="contact-btn">Contact</a>
+        </ul>
+       
+        <div class="logo">LOGOBAKERY</div>
+    </nav>
+
+    <br> <br>
+    <!-- Navbar 3: Logo on the left, links on the right -->
+    <nav class="navbar nav-left-right">
+        <div class="logo">LOGOBAKERY</div>
+        <ul class="nav-links">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <a href="#" class="contact-btn">Contact</a>
+    </nav>
+
+</body>
+</html>
